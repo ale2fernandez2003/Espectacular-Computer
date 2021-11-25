@@ -1,11 +1,11 @@
 /**
- * @author (Alejandro Fernández y Andrea González) 
+ * @author (Alejandro Fernandez y Andrea Gonzalez) 
  * @version (24/11/2021)
  */
 public class teclado {
-    // Número de teclas del teclado
+    // Numero de teclas del teclado
     private int numeroTeclas;
-    // Información sobre la conexión del teclado
+    // Informacion sobre la conexiï¿½n del teclado
     private boolean conectado;
 
     /**
@@ -17,7 +17,7 @@ public class teclado {
     }
 
     /**
-     * Devuelve el número de teclas.
+     * Devuelve el numero de teclas.
      */
     public int getNumeroTeclas() {
         return numeroTeclas;
@@ -31,7 +31,7 @@ public class teclado {
     }
     
     /**
-     * Nos permite modificar el número de teclas del teclado.
+     * Nos permite modificar el numero de teclas del teclado.
      */
     public void setNumeroTeclas(int numeroDeTeclas) {
         numeroTeclas = numeroDeTeclas;
@@ -42,5 +42,20 @@ public class teclado {
      */
     public void setConectado(boolean conexion) {
         conectado = conexion;
+    }
+    
+     /**
+     * Imprime un billete para el cliente actual
+     */
+    public void imprimirDetalles () {
+        if (conectado) {  
+            conectado=true;
+            System.out.println ("el teclado esta conectado");
+            System.out.println ("hay"+  (numeroTeclas)  +"numero de teclas");
+        }
+
+        else {
+            System.out.println ("el teclado no esta conectado");
+        } 
     }
 }
