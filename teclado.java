@@ -1,36 +1,46 @@
-
 /**
- * Write a description of class teclado here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Alejandro Fernández y Andrea González) 
+ * @version (24/11/2021)
  */
-public class teclado
-{
-    // instance variables - replace the example below with your own
+public class teclado {
+    // Número de teclas del teclado
     private int numeroTeclas;
-    
+    // Información sobre la conexión del teclado
     private boolean conectado;
 
     /**
-     * Constructor for objects of class teclado
+     * Crea un teclado
      */
-    public teclado()
-    {
-        // initialise instance variables
-        numeroTeclas = 105;
-        conectado=true;
+    public teclado(int teclas, boolean conected) {
+        numeroTeclas = teclas;
+        conectado = conected;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * Devuelve el número de teclas.
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public int getNumeroTeclas() {
+        return numeroTeclas;
+    }
+    
+    /**
+     * Devuelve el estado del teclado.
+     */
+    public boolean getConectado() {
+        return conectado;
+    }
+    
+    /**
+     * Nos permite modificar el número de teclas del teclado.
+     */
+    public void setNumeroTeclas(int numeroDeTeclas) {
+        numeroTeclas = numeroDeTeclas;
+    }
+    
+    /**
+     * Nos permite modificar el estado del teclado.
+     */
+    public void setConectado(boolean conexion) {
+        conectado = conexion;
     }
 }
