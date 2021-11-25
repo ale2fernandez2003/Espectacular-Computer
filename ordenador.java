@@ -1,33 +1,21 @@
-
 /**
- * Write a description of class ordenador here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Alejandro Fernandez y Andrea Gonzalez) 
+ * @version (25/11/2021)
  */
-public class ordenador
-{
-    // instance variables - replace the example below with your own
-    private int x;
+public class Ordenador {
+    // Marca del ordenador
+    private String marca;
+    // Id del ordenador
+    private long id;
+    // Objeto teclado
+    private Teclado teclado;
 
     /**
-     * Constructor for objects of class ordenador
+     * Crea un ordenador
      */
-    public ordenador()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public Ordenador(String fabricante, long codigoOrdenador, Teclado elTeclado) {
+        marca = fabricante;
+        id = codigoOrdenador;
+        teclado = elTeclado;
     }
 }

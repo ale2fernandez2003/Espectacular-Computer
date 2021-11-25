@@ -2,7 +2,7 @@
  * @author (Alejandro Fernandez y Andrea Gonzalez) 
  * @version (24/11/2021)
  */
-public class teclado {
+public class Teclado {
     // Numero de teclas del teclado
     private int numeroTeclas;
     // Informacion sobre la conexi�n del teclado
@@ -11,7 +11,7 @@ public class teclado {
     /**
      * Crea un teclado
      */
-    public teclado(int teclas, boolean conected) {
+    public Teclado(int teclas, boolean conected) {
         numeroTeclas = teclas;
         conectado = conected;
     }
@@ -51,7 +51,7 @@ public class teclado {
         if (conectado) {  
             conectado=true;
             System.out.println ("el teclado esta conectado");
-            System.out.println ("hay"+  (numeroTeclas)  +"numero de teclas");
+            System.out.println ("hay " +  (numeroTeclas)  + " numero de teclas");
         }
 
         else {
