@@ -1,6 +1,6 @@
 /**
  * @author (Alejandro Fernandez y Andrea Gonzalez) 
- * @version (25/11/2021)
+ * @version (25/11/2022)
  */
 public class Ordenador {
     // Marca del ordenador
