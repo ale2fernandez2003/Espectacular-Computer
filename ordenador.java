@@ -57,7 +57,7 @@ public class Ordenador {
     /**
      * Nos permite cambiar el estado.
      */    
-    public void setTecldo (Teclado nuevoTeclado) {
+    public void setTeclado (Teclado nuevoTeclado) {
         nuevoTeclado = teclado;
     }
     
@@ -65,6 +65,6 @@ public class Ordenador {
      * Imprime el estado del ordenador.
      */    
     public void imprimirDetalles () {
-    System.out.println ("El ordenador es de marca " + marca + ", con Id: " + id + ", conectado a: " + teclado + ".");
+    System.out.println ("El ordenador es de marca " + marca + ", con Id: " + id + ". ¿El teclado está conectado? " + teclado.getConectado() + ". Tiene " + teclado.getNumeroTeclas() + " teclas.");
     }
 }
