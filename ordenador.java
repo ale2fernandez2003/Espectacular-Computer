@@ -1,6 +1,6 @@
 /**
  * @author (Alejandro Fernandez y Andrea Gonzalez) 
- * @version (25/11/2022)
+ * @version (25/11/2021)
  */
 public class Ordenador {
     // Marca del ordenador
@@ -11,7 +11,7 @@ public class Ordenador {
     private Teclado teclado;
 
     /**
-     * Crea un ordenador
+     * Crea un ordenador.
      */
     public Ordenador(String fabricante, long codigoOrdenador, Teclado elTeclado) {
         marca = fabricante;
@@ -20,34 +20,51 @@ public class Ordenador {
     }
     
     /**
-     *
+     * Devuelve la marca del ordenador.
      */
     public String getMarca() {
         return marca;
     }
     
     /**
-     *
+     * Devuelve la ID del ordenador.
      */
     public long getId () {
         return id;
     }
     
     /**
-     *
+     * Devuelve el estado del teclado.
      */
-    public void setCodigoOrdenador (long codigoDelOrdenador) {
-        long codigoOrdenador= codigoDelOrdenador;
-    }
-    
-    public void setFabricante (String elFabricante) {
-        String fabricante= elFabricante;
+    public Teclado getElTeclado() {
+        return teclado;
     }
     
     /**
-     *
+     * Nos permite cambiar la ID del ordenador.
      */
-    public Teclado getelTeclado() {
-        return teclado;
+    public void setId (long codigoOrdenador) {
+        id = codigoOrdenador;
+    }
+    
+    /**
+     * Nos permite cambiar el fabricante del ordenador.
+     */    
+    public void setMarca (String fabricante) {
+        marca = fabricante;
+    }
+    
+    /**
+     * Nos permite cambiar el estado.
+     */    
+    public void setTecldo (Teclado nuevoTeclado) {
+        nuevoTeclado = teclado;
+    }
+    
+    /**
+     * Imprime el estado del ordenador.
+     */    
+    public void imprimirDetalles () {
+    System.out.println ("El ordenador es de marca " + marca + ", con Id: " + id + ", conectado a: " + teclado + ".");
     }
 }

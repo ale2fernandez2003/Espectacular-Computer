@@ -44,18 +44,18 @@ public class Teclado {
         conectado = conexion;
     }
     
-     /**
-     * Imprime un billete para el cliente actual
+    /**
+     * Imprime el estado del teclado.
      */
     public void imprimirDetalles () {
         if (conectado) {  
             conectado=true;
-            System.out.println ("el teclado esta conectado");
-            System.out.println ("hay " +  (numeroTeclas)  + " numero de teclas");
+            System.out.println ("El teclado esta conectado.");
+            System.out.println ("Tiene " +  (numeroTeclas)  + " teclas.");
         }
 
         else {
-            System.out.println ("el teclado no esta conectado");
+            System.out.println ("El teclado no esta conectado.");
         } 
     }
 }
